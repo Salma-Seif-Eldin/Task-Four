@@ -1,0 +1,507 @@
+:root {
+    --main-color: #ae9768;
+    --section-padding: 80px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 97px;
+}
+
+ul {
+    list-style: none;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+/* start nav bar */
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.nav .container {
+    display: flex;
+    background-color: transparent;
+
+}
+
+.nav .container .logo img {
+    width: 50%;
+    padding-top: 20px;
+}
+
+.nav .container .links {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.nav .container .links a {
+    text-align: center;
+    flex-basis: 80px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding-top: 33.5px;
+    margin-left: 10px;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+.nav .container .links a.active {
+    border-top: 3px solid var(--main-color);
+    padding-top: 30.5px;
+}
+
+.nav .container .links a:not(.active):hover {
+    color: var(--main-color);
+}
+
+
+/* end nav bar */
+/* start landing */
+.landing {
+    height: 100vh;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.landing .text {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.landing .text span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.landing .text h1 {
+    font-weight: normal;
+    font-size: 80px;
+}
+
+.landing .text p {
+    font-size: 25px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.landing .text a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+.landing .text a:first-of-type {
+    background-color: #8e7754;
+    border: 1px solid #8e7754;
+    color: white;
+}
+
+.landing .text a:last-of-type {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.landing .text a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* end landing */
+/* start about us */
+.about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .container img {
+    width: 50%;
+}
+
+.about .container .text {
+    width: 43%;
+}
+
+.about .container .text h2 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about .container .text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.about .container .text ul li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.about .container .text ul li i {
+    color: #8e7754;
+    border: 1px solid lightgray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .container .text ul li p {
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+/* end about us */
+/* start location */
+.location {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: #f8f8f8;
+}
+
+.location .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location .container img {
+    width: 50%;
+}
+
+.location .container .text {
+    width: 45%;
+}
+
+.location .container .text h2 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.location .container .text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+/* end location */
+/* start baking */
+.baking {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.baking .container {
+    text-align: center;
+}
+
+.baking .container h2 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.baking .container p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.baking .container .cards-holder {
+    display: flex;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.baking .container .cards-holder .card {
+    width: 350px;
+}
+
+@media (max-width:991px) {
+    .baking .container .cards-holder {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.baking .container .cards-holder img {
+
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.baking .container .cards-holder h3 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* end baking */
+/* start contact */
+.contact {
+    background-color: #f8f8f8;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width:767px) {
+    .contact .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.contact .container iframe {
+    width: 45%;
+    max-width: 100%;
+}
+
+.contact .container .info {
+    width: 45%;
+}
+
+.contact .container .info h2 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contact .container .info p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.contact .container .info ul li {
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.contact .container .info ul li .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #8e7754;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 15px;
+}
+
+.contact .container .info ul li p {
+    padding-top: 3px;
+}
+
+/* end contact */
+/* start pre footer */
+.pre {
+    background-color: #403d38;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 80px;
+}
+
+.pre .box {
+    flex: 1;
+    min-width: 250px;
+    margin-left: 20px;
+
+}
+
+.pre .box h3 {
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.pre .box p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.pre .box li {
+    margin-bottom: 20px;
+    position: relative;
+    color: #777;
+    padding-bottom: 10px;
+}
+
+.pre .box:not(:last-child) ul li:before {
+    font-family: "Font Awesome 6 free";
+    content: "\f105";
+    font-weight: 800;
+    margin-right: 20px;
+}
+
+.pre .box ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    background-color: #4a4742;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+
+.pre .box ul:last-child li {
+    display: flex;
+}
+
+.pre .box ul:last-child li i {
+    flex-basis: 30px;
+    padding-top: 5px;
+}
+
+/* end pre footer */
+/* start footer */
+.footer {
+    background-color: #353330;
+
+    text-align: center;
+}
+
+.footer .content {
+    top: 50%;
+    padding: 100px 0;
+}
+
+.footer .content p {
+    margin: 30px 0;
+    color: #777;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #484540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+.footer .social .icon:hover {
+    color: white;
+}
+.footer .social .face:hover {
+    background-color: #3b5998;
+}
+.footer .social .google:hover {
+    background-color: #dd4b39;
+}
+.footer .social .linked:hover {
+    background-color: #007bb5;
+}
+.footer .social .twitter:hover {
+    background-color: #00aced;
+}
+/* end footer */
+/* start fixed box */
+.fix {
+    position: fixed;
+    background-color: white;
+    color: grey;
+    right: 0;
+    top: 40%;
+    border-radius: 3px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+.fix i {
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.fix i:hover {
+    color: #218fe6;
+}
+/* end fixed box */
